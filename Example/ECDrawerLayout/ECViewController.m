@@ -11,10 +11,12 @@
 #import "DrawerView.h"
 #import "ECExtension.h"
 #import "ECNextController.h"
+#import "DrawerView2.h"
 
 @interface ECViewController () <ECDrawerLayoutDelegate>
 @property (strong, nonatomic) ECDrawerLayout* drawerLayout;
 @property (strong, nonatomic) DrawerView* drawerView;
+@property (strong, nonatomic) DrawerView2* drawerVeiw2;
 @end
 
 @implementation ECViewController
@@ -40,12 +42,21 @@
     return _drawerView;
 }
 
+- (DrawerView2*) drawerVeiw2
+{
+    if (!_drawerVeiw2) {
+        _drawerVeiw2 = [[DrawerView2 alloc] init];
+    }
+    return _drawerVeiw2;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = @"ECViewController";
     self.drawerLayout = [[ECDrawerLayout alloc] initWithParentView:self.navigationController.view];
-    self.drawerLayout.contentView = self.drawerView;
+    self.drawerLayout.contentView = self.drawerView;    // drawerView is a xib
+//    self.drawerLayout.contentView = self.drawerVeiw2; // drawerView2 is code implements
     self.drawerLayout.delegate = self;
     [self.navigationController.view addSubview:self.drawerLayout];
     

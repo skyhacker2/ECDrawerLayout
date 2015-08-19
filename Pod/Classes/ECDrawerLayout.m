@@ -165,6 +165,7 @@
     [self.containerView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     contentView.frame = CGRectMake(0, 0, self.containerView.bounds.size.width, self.containerView.bounds.size.height);
     [self.containerView addSubview:contentView];
+    _contentView = contentView;
 }
 
 #pragma mark - public method

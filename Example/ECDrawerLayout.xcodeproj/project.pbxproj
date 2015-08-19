@@ -24,6 +24,7 @@
 		A57D21831B841A080097F398 /* DrawerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A57D21821B841A080097F398 /* DrawerView.xib */; };
 		A57D21861B841BBB0097F398 /* DrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D21851B841BBB0097F398 /* DrawerView.m */; };
 		A57D21891B8430820097F398 /* ECNextController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D21881B8430820097F398 /* ECNextController.m */; };
+		A57D218F1B848D670097F398 /* DrawerView2.m in Sources */ = {isa = PBXBuildFile; fileRef = A57D218E1B848D670097F398 /* DrawerView2.m */; };
 		BA213378C4144F506F471B61 /* Pods_ECDrawerLayout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B16E943E8565D18D88B557 /* Pods_ECDrawerLayout_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C9413A7CB7A1A3D168E04B66 /* Pods_ECDrawerLayout_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5475B536B27A0B958FA12435 /* Pods_ECDrawerLayout_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -71,6 +72,8 @@
 		A57D21851B841BBB0097F398 /* DrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerView.m; sourceTree = "<group>"; };
 		A57D21871B8430820097F398 /* ECNextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECNextController.h; sourceTree = "<group>"; };
 		A57D21881B8430820097F398 /* ECNextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECNextController.m; sourceTree = "<group>"; };
+		A57D218D1B848D670097F398 /* DrawerView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerView2.h; sourceTree = "<group>"; };
+		A57D218E1B848D670097F398 /* DrawerView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerView2.m; sourceTree = "<group>"; };
 		D0B16E943E8565D18D88B557 /* Pods_ECDrawerLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECDrawerLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EB24CED12CDC7C6892BCFD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +151,8 @@
 				A57D21821B841A080097F398 /* DrawerView.xib */,
 				A57D21841B841BBB0097F398 /* DrawerView.h */,
 				A57D21851B841BBB0097F398 /* DrawerView.m */,
+				A57D218D1B848D670097F398 /* DrawerView2.h */,
+				A57D218E1B848D670097F398 /* DrawerView2.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -408,6 +413,7 @@
 				A57D21861B841BBB0097F398 /* DrawerView.m in Sources */,
 				6003F5A7195388D20070C39A /* ECViewController.m in Sources */,
 				A57D21891B8430820097F398 /* ECNextController.m in Sources */,
+				A57D218F1B848D670097F398 /* DrawerView2.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
