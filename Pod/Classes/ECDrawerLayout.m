@@ -19,12 +19,13 @@
 @property (nonatomic, assign) UIViewAnimationOptions closeAnimationOptions;
 @property (nonatomic, assign) CGFloat panGestureSideOffset;
 @property (nonatomic, readwrite) BOOL opened;
+@property (nonatomic, assign) BOOL enableShadow;
 @end
 
 
 #define SHADOW_RADIUS 5
 #define SHADOW_OPACITY 1
-#define BACKGROUND_ALPHA 0.3f
+#define BACKGROUND_ALPHA 0.5f
 #define FAST_VELOCITY_FOR_SWIPE_FOLLOW_DIRECTION 800
 #define ANIMATION_DURATION 0.2f
 @implementation ECDrawerLayout
@@ -101,7 +102,7 @@
 {
     _enableShadow = enableShadow;
     if (enableShadow) {
-        self.containerView.layer.shadowColor = [UIColor darkGrayColor].CGColor;
+        self.containerView.layer.shadowColor = [UIColor blackColor].CGColor;
         self.containerView.layer.shadowRadius = SHADOW_RADIUS;
         self.containerView.layer.shadowOpacity = SHADOW_OPACITY;
         self.containerView.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.containerView.bounds].CGPath;
@@ -202,6 +203,7 @@
                          frame.origin.x = 0;
                          self.containerView.frame = frame;
                          self.backgroundView.alpha = BACKGROUND_ALPHA;
+                         self.enableShadow = YES;
                      } completion:^(BOOL finished) {
                          [self finishOpen];
                      }];
@@ -217,6 +219,7 @@
                          frame.origin.x = -self.width;
                          self.containerView.frame = frame;
                          self.backgroundView.alpha = 0;
+                         self.enableShadow = NO;
                      } completion:^(BOOL finished) {
                          [self finishHide];
                      }];
@@ -235,7 +238,6 @@
 {
     self.frame = CGRectZero;
     self.backgroundView.frame = CGRectZero;
-    self.enableShadow = NO;
     self.enableTapClose = NO;
     self.opened = NO;
     if ([self.delegate respondsToSelector:@selector(drawerLayoutDidClose)]) {
@@ -245,7 +247,6 @@
 
 - (void) finishOpen
 {
-    self.enableShadow = YES;
     self.enableTapClose = YES;
     self.opened = YES;
     if ([self.delegate respondsToSelector:@selector(drawerLayoutDidOpen)]) {

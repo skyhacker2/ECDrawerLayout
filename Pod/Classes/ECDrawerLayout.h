@@ -39,7 +39,6 @@
  *  Width of drawerlayout
  */
 @property (nonatomic, assign) CGFloat width;
-@property (nonatomic, assign) BOOL enableShadow;
 @property (nonatomic, assign) BOOL enableSwipeGesture;
 @property (nonatomic, readonly) BOOL opened;
 /** 
