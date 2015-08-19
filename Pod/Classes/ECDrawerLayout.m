@@ -181,7 +181,7 @@
 
 - (void) toggle
 {
-    if (self.opened) {
+    if (!self.opened) {
         [self openDrawer];
     } else {
         [self closeDrawer];

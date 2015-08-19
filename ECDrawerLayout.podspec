@@ -8,10 +8,11 @@
 
 Pod::Spec.new do |s|
   s.name             = "ECDrawerLayout"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A DrawerLayout on iOS"
-                        DrawerLayout acts as a top-level container for window content that allows for interactive "drawer" views to be pulled out from the edge of the window.
+
   s.description      = <<-DESC
+                        DrawerLayout acts as a top-level container for window content that allows for interactive "drawer" views to be pulled out from the edge of the window.
                        DESC
 
   s.homepage         = "https://github.com/skyhacker2/ECDrawerLayout"
