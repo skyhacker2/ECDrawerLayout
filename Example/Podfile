@@ -3,6 +3,7 @@ use_frameworks!
 
 target 'ECDrawerLayout_Example', :exclusive => true do
   pod "ECDrawerLayout", :path => "../"
+  pod "ECExtension"
 end
 
 target 'ECDrawerLayout_Tests', :exclusive => true do

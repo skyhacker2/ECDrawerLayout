@@ -1,0 +1,6 @@
+framework module ECDrawerLayout {
+  umbrella header "ECDrawerLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -5,11 +5,14 @@
 [![License](https://img.shields.io/cocoapods/l/ECDrawerLayout.svg?style=flat)](http://cocoapods.org/pods/ECDrawerLayout)
 [![Platform](https://img.shields.io/cocoapods/p/ECDrawerLayout.svg?style=flat)](http://cocoapods.org/pods/ECDrawerLayout)
 
+## Overview
+
+A very simple DrawerLayout implemented on the iOS.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
 
 ## Installation
 
@@ -19,6 +22,20 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "ECDrawerLayout"
 ```
+
+## Configuring
+
+```
+self.drawerLayout = [[ECDrawerLayout alloc] initWithParentView:self.navigationController.view];
+    self.drawerLayout.contentView = self.drawerView;
+    self.drawerLayout.delegate = self;
+    [self.navigationController.view addSubview:self.drawerLayout];
+```
+You have to implement a content view yourself, and then add it to drawerLayout's contentView property. Please see the example.
+
+I look forward to the effect that when DrawerLayout display, status bar hidden, like Uber did. :(
+
+![image](ECDrawerLayout2.gif)
 
 ## Author
 

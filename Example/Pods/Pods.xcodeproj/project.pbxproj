@@ -1,0 +1,1076 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		028E63F26EE535F6818E1FC00C292000 /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A4686803C6ABBEA049589908C72A68 /* UIColor+Extend.m */; };
+		08D9458219FB5C6C821345469A2072E1 /* ECDrawerLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D03A7961775482510FDD41FE362134EC /* ECDrawerLayout-dummy.m */; };
+		0AB449BD06C5A80274CF7E57DA7B2FEC /* Pods-ECDrawerLayout_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D700992C207C5A925185FC0D40E95BA /* Pods-ECDrawerLayout_Tests-dummy.m */; };
+		10D721EDAB708C6B811EE456B79C7E5B /* Pods-ECDrawerLayout_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 150C140EC40E37265989D59A5000F647 /* Pods-ECDrawerLayout_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11F5DF44C4193BAA8F8FE38CA8ECD6DA /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A653B9FF1A5D27ED3BF27AD33823E9B /* UIView+Extend.m */; };
+		2EF1D3C1CDCAC4F57E143CE7CAD2B384 /* ECDrawerLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5960B8FE1D221B558A783559E7F4DE /* ECDrawerLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		335E558241681EA28CA4440B2A2789B0 /* ECExtension.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AFF3AF958DDF8810CFE4309C4AA970B2 /* ECExtension.bundle */; };
+		392D6AA314C8B007011A45DF7BA75E49 /* ECExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF687382A98C0E13F6AAF9BE7260750 /* ECExtension-dummy.m */; };
+		398CDCE9553F33F3361884D0CBA27490 /* ECExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 373A9D75E02F7C21469B40CBB3C8B603 /* ECExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		442D58FF5423326B0C82C08259BB0B16 /* ECDrawerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C301416822AF1172567AB708F5E3CE /* ECDrawerLayout.m */; };
+		496D0AFC195DDC747E89A6FB811E8CE9 /* Pods-ECDrawerLayout_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 526E5ED0E82942FF9CFE8CEEA510AC63 /* Pods-ECDrawerLayout_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F503EF77F85E990D244D3C04375EA3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86635F447ABF507E076C22FDD30371A /* Foundation.framework */; };
+		817313A84A3E74C88E8AE1145DDF7E24 /* CBUUID+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCD66D27DF2BFDCD21F029FB92CC9 /* CBUUID+Extend.m */; };
+		A92820338CD622D91BF183531535ABE4 /* UIView+Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E7088039109D260E6B43A57797279A8 /* UIView+Extend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC0F4E4F25E9E390DEC00A027F1E52F0 /* ECDrawerLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BAFA202AEAAB8A0E02D4FE6F49AF9494 /* ECDrawerLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C572B997E498B39132609EDF9CF64375 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86635F447ABF507E076C22FDD30371A /* Foundation.framework */; };
+		C86BB36CCAE62CF51957361485CF8BD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86635F447ABF507E076C22FDD30371A /* Foundation.framework */; };
+		D66C23DE1EAA2E3A3BE97780BA6F969E /* CBUUID+Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B07DCCB35E8E5A8BC1264E163A44E9 /* CBUUID+Extend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E449372A780934F66294D58B12A4A68D /* UIImage+Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = A584C6030DFE7CEEE587368EF0C3E413 /* UIImage+Extend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E47A561B28634BE311E7608A58CC6EC6 /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 808325734348326C20BD66B751950098 /* UIImage+Extend.m */; };
+		E94ADBBA421DBB2FC736AFA334D6D609 /* Pods-ECDrawerLayout_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10912EB9D89C2D18F079F30884983695 /* Pods-ECDrawerLayout_Example-dummy.m */; };
+		E983EFA48E584AA155639BBBDD02D14F /* UIColor+Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FBCC383A37B5DF6CBCB2A306F91CF6 /* UIColor+Extend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAA42F5E2E447DDCA8E1D141FB613A02 /* ECDrawerLayout.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 243824E1A94B2A534A2096C27C99D0C9 /* ECDrawerLayout.bundle */; };
+		FB009674EC65B01D4915E28C2D177839 /* ECExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 59BB1433662CBF7CF877327B75E69620 /* ECExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC02252DDD0603232BB001C1413927AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86635F447ABF507E076C22FDD30371A /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19C0A6328A82BFC5E4A362E0A576B9AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEDB986B5C7ECF1CF698B43D0B08B07D;
+			remoteInfo = "ECExtension-ECExtension";
+		};
+		21300760FD13F147265225D749B0AE1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBF7FAE2DDAE4F994C9F704A10FD8960;
+			remoteInfo = "ECDrawerLayout-ECDrawerLayout";
+		};
+		2FA09B0AB30616E020BAF1B9D51E8346 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC18E6BA1C9D20C9178EEE6A7C6B7527;
+			remoteInfo = ECDrawerLayout;
+		};
+		B7FA5BBD3E2756119995ACA1DA2A7040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4C8DC52E504F214A5A0ED27596AF151;
+			remoteInfo = ECExtension;
+		};
+		E75A5B6C9FE2812D53AEA3C9C767F288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC18E6BA1C9D20C9178EEE6A7C6B7527;
+			remoteInfo = ECDrawerLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0304C95B03A7FC635728EF66AD04D4E9 /* ECDrawerLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ECDrawerLayout.xcconfig; sourceTree = "<group>"; };
+		0EE603E0971D8E48D239899518319015 /* Pods-ECDrawerLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ECDrawerLayout_Example.modulemap"; sourceTree = "<group>"; };
+		10912EB9D89C2D18F079F30884983695 /* Pods-ECDrawerLayout_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ECDrawerLayout_Example-dummy.m"; sourceTree = "<group>"; };
+		11FBCC383A37B5DF6CBCB2A306F91CF6 /* UIColor+Extend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Extend.h"; path = "Pod/Classes/UIColor+Extend.h"; sourceTree = "<group>"; };
+		150C140EC40E37265989D59A5000F647 /* Pods-ECDrawerLayout_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ECDrawerLayout_Tests-umbrella.h"; sourceTree = "<group>"; };
+		15F0A496905B12259E046F822C462FBB /* Pods-ECDrawerLayout_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ECDrawerLayout_Tests.modulemap"; sourceTree = "<group>"; };
+		1AA29BFB1D7877A763BAAC5299BBDEC1 /* ECDrawerLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ECDrawerLayout.modulemap; sourceTree = "<group>"; };
+		243824E1A94B2A534A2096C27C99D0C9 /* ECDrawerLayout.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECDrawerLayout.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D54BD956E131ADCFA483F2D42F34B2D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34114F2E110887BC8F83526A265B2B30 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		373A9D75E02F7C21469B40CBB3C8B603 /* ECExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ECExtension-umbrella.h"; sourceTree = "<group>"; };
+		3E113214C2BC4AD7C7574B7D3A68F8BD /* Pods_ECDrawerLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECDrawerLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40F7D28BAE042B937A155E305F2F8A92 /* ECDrawerLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECDrawerLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		490CFEE15700044D6E31C08D94B55546 /* Pods_ECDrawerLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ECDrawerLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B83FC5FEBA565315A6510D0775F7DEC /* Pods-ECDrawerLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ECDrawerLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C0912376D8F265EF58B7F242789FB51 /* ECDrawerLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ECDrawerLayout-prefix.pch"; sourceTree = "<group>"; };
+		4CDBCD66D27DF2BFDCD21F029FB92CC9 /* CBUUID+Extend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CBUUID+Extend.m"; path = "Pod/Classes/CBUUID+Extend.m"; sourceTree = "<group>"; };
+		4E7088039109D260E6B43A57797279A8 /* UIView+Extend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Extend.h"; path = "Pod/Classes/UIView+Extend.h"; sourceTree = "<group>"; };
+		4E965F9E945BB50067BF053D2FB3065C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F5960B8FE1D221B558A783559E7F4DE /* ECDrawerLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ECDrawerLayout-umbrella.h"; sourceTree = "<group>"; };
+		50CAA587CE1A41447B6CB3B74709A2AF /* ECDrawerLayout-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ECDrawerLayout-Private.xcconfig"; sourceTree = "<group>"; };
+		526E5ED0E82942FF9CFE8CEEA510AC63 /* Pods-ECDrawerLayout_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ECDrawerLayout_Example-umbrella.h"; sourceTree = "<group>"; };
+		54690096A1753AC383F03D8D89A88026 /* ECExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ECExtension.modulemap; sourceTree = "<group>"; };
+		55A4686803C6ABBEA049589908C72A68 /* UIColor+Extend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Extend.m"; path = "Pod/Classes/UIColor+Extend.m"; sourceTree = "<group>"; };
+		59BB1433662CBF7CF877327B75E69620 /* ECExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECExtension.h; path = Pod/Classes/ECExtension.h; sourceTree = "<group>"; };
+		5D700992C207C5A925185FC0D40E95BA /* Pods-ECDrawerLayout_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ECDrawerLayout_Tests-dummy.m"; sourceTree = "<group>"; };
+		61C2D07145423600FA96FA8521293D15 /* Pods-ECDrawerLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ECDrawerLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		65B7101DF2DB7C3C6F0DA49C6BDA5748 /* Pods-ECDrawerLayout_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ECDrawerLayout_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		66F149BECC9E0AED1624A09B6A5C4C56 /* ECExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ECExtension-prefix.pch"; sourceTree = "<group>"; };
+		6A653B9FF1A5D27ED3BF27AD33823E9B /* UIView+Extend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extend.m"; path = "Pod/Classes/UIView+Extend.m"; sourceTree = "<group>"; };
+		6B49850D763C58E130CF355B148F09B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77BFDABC009BF601559563CC10D91C2D /* ECExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ECExtension.xcconfig; sourceTree = "<group>"; };
+		7AAE112243DCC67A3A35823C879EE9B9 /* ECExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CBD99B1B745703465C012DD822DFF06 /* Pods-ECDrawerLayout_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ECDrawerLayout_Example-frameworks.sh"; sourceTree = "<group>"; };
+		808325734348326C20BD66B751950098 /* UIImage+Extend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Extend.m"; path = "Pod/Classes/UIImage+Extend.m"; sourceTree = "<group>"; };
+		879FAAACAE40F00B8E4FCECC8F25C5ED /* Pods-ECDrawerLayout_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ECDrawerLayout_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		88AD0A42C38212372E0299B35873D2D5 /* Pods-ECDrawerLayout_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ECDrawerLayout_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		99C301416822AF1172567AB708F5E3CE /* ECDrawerLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ECDrawerLayout.m; sourceTree = "<group>"; };
+		9EA0A0AD3032F2F61AAC94C1CEAA28AC /* Pods-ECDrawerLayout_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ECDrawerLayout_Tests-resources.sh"; sourceTree = "<group>"; };
+		A584C6030DFE7CEEE587368EF0C3E413 /* UIImage+Extend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Extend.h"; path = "Pod/Classes/UIImage+Extend.h"; sourceTree = "<group>"; };
+		AFBB8FD71E5E23BA2AF855641871B92F /* Pods-ECDrawerLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ECDrawerLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
+		AFF3AF958DDF8810CFE4309C4AA970B2 /* ECExtension.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECExtension.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B336476557F71D2AD18827888EA105B7 /* Pods-ECDrawerLayout_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ECDrawerLayout_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B71A6C96E0FA378670478F3B74564558 /* Pods-ECDrawerLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ECDrawerLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BAFA202AEAAB8A0E02D4FE6F49AF9494 /* ECDrawerLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ECDrawerLayout.h; sourceTree = "<group>"; };
+		BC055FEEAD5F1DBC5EE789DF568C621B /* Pods-ECDrawerLayout_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ECDrawerLayout_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C86635F447ABF507E076C22FDD30371A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CA948569045265EE8B32820B9D1C9B12 /* ECExtension-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ECExtension-Private.xcconfig"; sourceTree = "<group>"; };
+		CC443B857B6D84522F1CABAAD12C2D75 /* Pods-ECDrawerLayout_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ECDrawerLayout_Example-resources.sh"; sourceTree = "<group>"; };
+		D03A7961775482510FDD41FE362134EC /* ECDrawerLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ECDrawerLayout-dummy.m"; sourceTree = "<group>"; };
+		D1B07DCCB35E8E5A8BC1264E163A44E9 /* CBUUID+Extend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CBUUID+Extend.h"; path = "Pod/Classes/CBUUID+Extend.h"; sourceTree = "<group>"; };
+		DBF687382A98C0E13F6AAF9BE7260750 /* ECExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ECExtension-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		022EDD84FF371B45DE827BBAA343A5F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC02252DDD0603232BB001C1413927AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1090D6886EB7189114436FA5A3B8277C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C572B997E498B39132609EDF9CF64375 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6073BF323D67C0E1AD8E038DB6266A6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86BB36CCAE62CF51957361485CF8BD4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D6EA10C82BFBDD6C01E95783395D20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D196CDC38A286E1B8E2F067A072818F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F503EF77F85E990D244D3C04375EA3C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21C4775355A247FB18246E7F1C63443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04BBD5C54E8D4915F1BEA2575D182015 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7DE5736995E67BF7866EA3080F6DDCC /* Pods-ECDrawerLayout_Example */,
+				05DB77B1341559975546E2A09E818C2A /* Pods-ECDrawerLayout_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		05DB77B1341559975546E2A09E818C2A /* Pods-ECDrawerLayout_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2D54BD956E131ADCFA483F2D42F34B2D /* Info.plist */,
+				15F0A496905B12259E046F822C462FBB /* Pods-ECDrawerLayout_Tests.modulemap */,
+				BC055FEEAD5F1DBC5EE789DF568C621B /* Pods-ECDrawerLayout_Tests-acknowledgements.markdown */,
+				B336476557F71D2AD18827888EA105B7 /* Pods-ECDrawerLayout_Tests-acknowledgements.plist */,
+				5D700992C207C5A925185FC0D40E95BA /* Pods-ECDrawerLayout_Tests-dummy.m */,
+				879FAAACAE40F00B8E4FCECC8F25C5ED /* Pods-ECDrawerLayout_Tests-frameworks.sh */,
+				9EA0A0AD3032F2F61AAC94C1CEAA28AC /* Pods-ECDrawerLayout_Tests-resources.sh */,
+				150C140EC40E37265989D59A5000F647 /* Pods-ECDrawerLayout_Tests-umbrella.h */,
+				4B83FC5FEBA565315A6510D0775F7DEC /* Pods-ECDrawerLayout_Tests.debug.xcconfig */,
+				B71A6C96E0FA378670478F3B74564558 /* Pods-ECDrawerLayout_Tests.release.xcconfig */,
+			);
+			name = "Pods-ECDrawerLayout_Tests";
+			path = "Target Support Files/Pods-ECDrawerLayout_Tests";
+			sourceTree = "<group>";
+		};
+		1D4E1D345D92CBC4403401840B4D7881 /* ECExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D1B07DCCB35E8E5A8BC1264E163A44E9 /* CBUUID+Extend.h */,
+				4CDBCD66D27DF2BFDCD21F029FB92CC9 /* CBUUID+Extend.m */,
+				59BB1433662CBF7CF877327B75E69620 /* ECExtension.h */,
+				11FBCC383A37B5DF6CBCB2A306F91CF6 /* UIColor+Extend.h */,
+				55A4686803C6ABBEA049589908C72A68 /* UIColor+Extend.m */,
+				A584C6030DFE7CEEE587368EF0C3E413 /* UIImage+Extend.h */,
+				808325734348326C20BD66B751950098 /* UIImage+Extend.m */,
+				4E7088039109D260E6B43A57797279A8 /* UIView+Extend.h */,
+				6A653B9FF1A5D27ED3BF27AD33823E9B /* UIView+Extend.m */,
+				B92507922F222C58B268C19BEED39D50 /* Support Files */,
+			);
+			path = ECExtension;
+			sourceTree = "<group>";
+		};
+		30923514D7A6C9A9B6D9FCBB3F6D6DA8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				686162FBE7F6099298C5B73166703BFC /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C86635F447ABF507E076C22FDD30371A /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		686162FBE7F6099298C5B73166703BFC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA202AEAAB8A0E02D4FE6F49AF9494 /* ECDrawerLayout.h */,
+				99C301416822AF1172567AB708F5E3CE /* ECDrawerLayout.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		78BAAAADEDCD50E6B1562A9FAE2E0518 /* ECDrawerLayout */ = {
+			isa = PBXGroup;
+			children = (
+				30923514D7A6C9A9B6D9FCBB3F6D6DA8 /* Pod */,
+				BBEEEEF6F6C9A1B7C5E709EDC59F4E7F /* Support Files */,
+			);
+			name = ECDrawerLayout;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				FD52C3D80822E5421D28DB93AB69D01D /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FB94308130B4EB4D3DBFCEC210712E89 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				04BBD5C54E8D4915F1BEA2575D182015 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B92507922F222C58B268C19BEED39D50 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54690096A1753AC383F03D8D89A88026 /* ECExtension.modulemap */,
+				77BFDABC009BF601559563CC10D91C2D /* ECExtension.xcconfig */,
+				CA948569045265EE8B32820B9D1C9B12 /* ECExtension-Private.xcconfig */,
+				DBF687382A98C0E13F6AAF9BE7260750 /* ECExtension-dummy.m */,
+				66F149BECC9E0AED1624A09B6A5C4C56 /* ECExtension-prefix.pch */,
+				373A9D75E02F7C21469B40CBB3C8B603 /* ECExtension-umbrella.h */,
+				4E965F9E945BB50067BF053D2FB3065C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ECExtension";
+			sourceTree = "<group>";
+		};
+		BBEEEEF6F6C9A1B7C5E709EDC59F4E7F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AA29BFB1D7877A763BAAC5299BBDEC1 /* ECDrawerLayout.modulemap */,
+				0304C95B03A7FC635728EF66AD04D4E9 /* ECDrawerLayout.xcconfig */,
+				50CAA587CE1A41447B6CB3B74709A2AF /* ECDrawerLayout-Private.xcconfig */,
+				D03A7961775482510FDD41FE362134EC /* ECDrawerLayout-dummy.m */,
+				4C0912376D8F265EF58B7F242789FB51 /* ECDrawerLayout-prefix.pch */,
+				4F5960B8FE1D221B558A783559E7F4DE /* ECDrawerLayout-umbrella.h */,
+				6B49850D763C58E130CF355B148F09B9 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ECDrawerLayout";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7DE5736995E67BF7866EA3080F6DDCC /* Pods-ECDrawerLayout_Example */ = {
+			isa = PBXGroup;
+			children = (
+				34114F2E110887BC8F83526A265B2B30 /* Info.plist */,
+				0EE603E0971D8E48D239899518319015 /* Pods-ECDrawerLayout_Example.modulemap */,
+				65B7101DF2DB7C3C6F0DA49C6BDA5748 /* Pods-ECDrawerLayout_Example-acknowledgements.markdown */,
+				88AD0A42C38212372E0299B35873D2D5 /* Pods-ECDrawerLayout_Example-acknowledgements.plist */,
+				10912EB9D89C2D18F079F30884983695 /* Pods-ECDrawerLayout_Example-dummy.m */,
+				7CBD99B1B745703465C012DD822DFF06 /* Pods-ECDrawerLayout_Example-frameworks.sh */,
+				CC443B857B6D84522F1CABAAD12C2D75 /* Pods-ECDrawerLayout_Example-resources.sh */,
+				526E5ED0E82942FF9CFE8CEEA510AC63 /* Pods-ECDrawerLayout_Example-umbrella.h */,
+				61C2D07145423600FA96FA8521293D15 /* Pods-ECDrawerLayout_Example.debug.xcconfig */,
+				AFBB8FD71E5E23BA2AF855641871B92F /* Pods-ECDrawerLayout_Example.release.xcconfig */,
+			);
+			name = "Pods-ECDrawerLayout_Example";
+			path = "Target Support Files/Pods-ECDrawerLayout_Example";
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				243824E1A94B2A534A2096C27C99D0C9 /* ECDrawerLayout.bundle */,
+				40F7D28BAE042B937A155E305F2F8A92 /* ECDrawerLayout.framework */,
+				AFF3AF958DDF8810CFE4309C4AA970B2 /* ECExtension.bundle */,
+				7AAE112243DCC67A3A35823C879EE9B9 /* ECExtension.framework */,
+				3E113214C2BC4AD7C7574B7D3A68F8BD /* Pods_ECDrawerLayout_Example.framework */,
+				490CFEE15700044D6E31C08D94B55546 /* Pods_ECDrawerLayout_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB94308130B4EB4D3DBFCEC210712E89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D4E1D345D92CBC4403401840B4D7881 /* ECExtension */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD52C3D80822E5421D28DB93AB69D01D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78BAAAADEDCD50E6B1562A9FAE2E0518 /* ECDrawerLayout */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C1E8EA59929A9C4DAABACE275FD36A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D721EDAB708C6B811EE456B79C7E5B /* Pods-ECDrawerLayout_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B068292D88C61CB35208279CDAD3E47 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496D0AFC195DDC747E89A6FB811E8CE9 /* Pods-ECDrawerLayout_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990B1735658AF9604413E84A5FA3A7C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66C23DE1EAA2E3A3BE97780BA6F969E /* CBUUID+Extend.h in Headers */,
+				398CDCE9553F33F3361884D0CBA27490 /* ECExtension-umbrella.h in Headers */,
+				FB009674EC65B01D4915E28C2D177839 /* ECExtension.h in Headers */,
+				E983EFA48E584AA155639BBBDD02D14F /* UIColor+Extend.h in Headers */,
+				E449372A780934F66294D58B12A4A68D /* UIImage+Extend.h in Headers */,
+				A92820338CD622D91BF183531535ABE4 /* UIView+Extend.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B32470625189B8593B09F64BB9A62A99 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EF1D3C1CDCAC4F57E143CE7CAD2B384 /* ECDrawerLayout-umbrella.h in Headers */,
+				BC0F4E4F25E9E390DEC00A027F1E52F0 /* ECDrawerLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A0D89B0E141A8DD99E5E4E369D5B29A5 /* Pods-ECDrawerLayout_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8DC1F6D362CD01DF165E08946512006 /* Build configuration list for PBXNativeTarget "Pods-ECDrawerLayout_Example" */;
+			buildPhases = (
+				0C6CCD5FD52C0B12342C8F6A372249C8 /* Sources */,
+				6073BF323D67C0E1AD8E038DB6266A6A /* Frameworks */,
+				5B068292D88C61CB35208279CDAD3E47 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2D3F99A8BD3A4E06C654C5CD21047B2 /* PBXTargetDependency */,
+				A1C08682A4B75C391A76C49CA99730F3 /* PBXTargetDependency */,
+			);
+			name = "Pods-ECDrawerLayout_Example";
+			productName = "Pods-ECDrawerLayout_Example";
+			productReference = 3E113214C2BC4AD7C7574B7D3A68F8BD /* Pods_ECDrawerLayout_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A4C8DC52E504F214A5A0ED27596AF151 /* ECExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6119E83346C8629CA68F548D9487B549 /* Build configuration list for PBXNativeTarget "ECExtension" */;
+			buildPhases = (
+				75B9329647DB1E40707F5BD12F7C567B /* Sources */,
+				1090D6886EB7189114436FA5A3B8277C /* Frameworks */,
+				5E4D6015230C7E3BC3FEB8FC80BAF83C /* Resources */,
+				990B1735658AF9604413E84A5FA3A7C6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A41FD4EA2457A5AF0A991B980EA03FA /* PBXTargetDependency */,
+			);
+			name = ECExtension;
+			productName = ECExtension;
+			productReference = 7AAE112243DCC67A3A35823C879EE9B9 /* ECExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C87C72D49186E83FF27EFD7C5DD98461 /* Pods-ECDrawerLayout_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 364F5C4DF57F8AA5A620562B2298F187 /* Build configuration list for PBXNativeTarget "Pods-ECDrawerLayout_Tests" */;
+			buildPhases = (
+				0934672367A24BD067D6EA36E1AE8B0E /* Sources */,
+				022EDD84FF371B45DE827BBAA343A5F2 /* Frameworks */,
+				0C1E8EA59929A9C4DAABACE275FD36A6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06DFB24C18197AEAC0CBB261CF7DA535 /* PBXTargetDependency */,
+			);
+			name = "Pods-ECDrawerLayout_Tests";
+			productName = "Pods-ECDrawerLayout_Tests";
+			productReference = 490CFEE15700044D6E31C08D94B55546 /* Pods_ECDrawerLayout_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DBF7FAE2DDAE4F994C9F704A10FD8960 /* ECDrawerLayout-ECDrawerLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58D28735DC71E7B78FDF37801B2EAA56 /* Build configuration list for PBXNativeTarget "ECDrawerLayout-ECDrawerLayout" */;
+			buildPhases = (
+				E3BC4AE0F8B3D6BF5DAF14930F8F6127 /* Sources */,
+				B1D6EA10C82BFBDD6C01E95783395D20 /* Frameworks */,
+				3A762CE4E6D232B72F0493D8EBFB79F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ECDrawerLayout-ECDrawerLayout";
+			productName = "ECDrawerLayout-ECDrawerLayout";
+			productReference = 243824E1A94B2A534A2096C27C99D0C9 /* ECDrawerLayout.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DEDB986B5C7ECF1CF698B43D0B08B07D /* ECExtension-ECExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABD9A9547204D56ACAE199035BE4C105 /* Build configuration list for PBXNativeTarget "ECExtension-ECExtension" */;
+			buildPhases = (
+				671A79C7E96904594CCE5DF5959913CB /* Sources */,
+				D21C4775355A247FB18246E7F1C63443 /* Frameworks */,
+				1FAC65245FD4C7D9D5592AE6791BEF47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ECExtension-ECExtension";
+			productName = "ECExtension-ECExtension";
+			productReference = AFF3AF958DDF8810CFE4309C4AA970B2 /* ECExtension.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		EC18E6BA1C9D20C9178EEE6A7C6B7527 /* ECDrawerLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261989684BF0E5D8E3791D9E68E8226B /* Build configuration list for PBXNativeTarget "ECDrawerLayout" */;
+			buildPhases = (
+				88F834D7C7F570B459BA585986E912ED /* Sources */,
+				D196CDC38A286E1B8E2F067A072818F4 /* Frameworks */,
+				01CFF9B82EC8C9DABAB49DE0E466A2B3 /* Resources */,
+				B32470625189B8593B09F64BB9A62A99 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				193B45B1FB257893833CCE15F3610AFD /* PBXTargetDependency */,
+			);
+			name = ECDrawerLayout;
+			productName = ECDrawerLayout;
+			productReference = 40F7D28BAE042B937A155E305F2F8A92 /* ECDrawerLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC18E6BA1C9D20C9178EEE6A7C6B7527 /* ECDrawerLayout */,
+				DBF7FAE2DDAE4F994C9F704A10FD8960 /* ECDrawerLayout-ECDrawerLayout */,
+				A4C8DC52E504F214A5A0ED27596AF151 /* ECExtension */,
+				DEDB986B5C7ECF1CF698B43D0B08B07D /* ECExtension-ECExtension */,
+				A0D89B0E141A8DD99E5E4E369D5B29A5 /* Pods-ECDrawerLayout_Example */,
+				C87C72D49186E83FF27EFD7C5DD98461 /* Pods-ECDrawerLayout_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01CFF9B82EC8C9DABAB49DE0E466A2B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA42F5E2E447DDCA8E1D141FB613A02 /* ECDrawerLayout.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAC65245FD4C7D9D5592AE6791BEF47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A762CE4E6D232B72F0493D8EBFB79F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4D6015230C7E3BC3FEB8FC80BAF83C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335E558241681EA28CA4440B2A2789B0 /* ECExtension.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0934672367A24BD067D6EA36E1AE8B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB449BD06C5A80274CF7E57DA7B2FEC /* Pods-ECDrawerLayout_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6CCD5FD52C0B12342C8F6A372249C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E94ADBBA421DBB2FC736AFA334D6D609 /* Pods-ECDrawerLayout_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		671A79C7E96904594CCE5DF5959913CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75B9329647DB1E40707F5BD12F7C567B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817313A84A3E74C88E8AE1145DDF7E24 /* CBUUID+Extend.m in Sources */,
+				392D6AA314C8B007011A45DF7BA75E49 /* ECExtension-dummy.m in Sources */,
+				028E63F26EE535F6818E1FC00C292000 /* UIColor+Extend.m in Sources */,
+				E47A561B28634BE311E7608A58CC6EC6 /* UIImage+Extend.m in Sources */,
+				11F5DF44C4193BAA8F8FE38CA8ECD6DA /* UIView+Extend.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88F834D7C7F570B459BA585986E912ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08D9458219FB5C6C821345469A2072E1 /* ECDrawerLayout-dummy.m in Sources */,
+				442D58FF5423326B0C82C08259BB0B16 /* ECDrawerLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3BC4AE0F8B3D6BF5DAF14930F8F6127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06DFB24C18197AEAC0CBB261CF7DA535 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ECDrawerLayout;
+			target = EC18E6BA1C9D20C9178EEE6A7C6B7527 /* ECDrawerLayout */;
+			targetProxy = 2FA09B0AB30616E020BAF1B9D51E8346 /* PBXContainerItemProxy */;
+		};
+		193B45B1FB257893833CCE15F3610AFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ECDrawerLayout-ECDrawerLayout";
+			target = DBF7FAE2DDAE4F994C9F704A10FD8960 /* ECDrawerLayout-ECDrawerLayout */;
+			targetProxy = 21300760FD13F147265225D749B0AE1C /* PBXContainerItemProxy */;
+		};
+		4A41FD4EA2457A5AF0A991B980EA03FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ECExtension-ECExtension";
+			target = DEDB986B5C7ECF1CF698B43D0B08B07D /* ECExtension-ECExtension */;
+			targetProxy = 19C0A6328A82BFC5E4A362E0A576B9AF /* PBXContainerItemProxy */;
+		};
+		A1C08682A4B75C391A76C49CA99730F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ECExtension;
+			target = A4C8DC52E504F214A5A0ED27596AF151 /* ECExtension */;
+			targetProxy = B7FA5BBD3E2756119995ACA1DA2A7040 /* PBXContainerItemProxy */;
+		};
+		E2D3F99A8BD3A4E06C654C5CD21047B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ECDrawerLayout;
+			target = EC18E6BA1C9D20C9178EEE6A7C6B7527 /* ECDrawerLayout */;
+			targetProxy = E75A5B6C9FE2812D53AEA3C9C767F288 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		108A8C711543023A703E34244123229D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA948569045265EE8B32820B9D1C9B12 /* ECExtension-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ECExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		10A6383A5A546A77B4E4E76AE4A09A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFBB8FD71E5E23BA2AF855641871B92F /* Pods-ECDrawerLayout_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ECDrawerLayout_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ECDrawerLayout_Example/Pods-ECDrawerLayout_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ECDrawerLayout_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2AFD3A9CED3FAE28FC470BAA646BB8D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50CAA587CE1A41447B6CB3B74709A2AF /* ECDrawerLayout-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ECDrawerLayout/ECDrawerLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ECDrawerLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ECDrawerLayout/ECDrawerLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ECDrawerLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42D269C65BB0DEE3008844141E6DC3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50CAA587CE1A41447B6CB3B74709A2AF /* ECDrawerLayout-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ECDrawerLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		43DD3CD906149C6DCA07B9203B0336F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C2D07145423600FA96FA8521293D15 /* Pods-ECDrawerLayout_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ECDrawerLayout_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ECDrawerLayout_Example/Pods-ECDrawerLayout_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ECDrawerLayout_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		57F9565FC63152F96E5FE52F347C087A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA948569045265EE8B32820B9D1C9B12 /* ECExtension-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ECExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5F5DF73AFD4E09AA1301836F116DB9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B71A6C96E0FA378670478F3B74564558 /* Pods-ECDrawerLayout_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ECDrawerLayout_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ECDrawerLayout_Tests/Pods-ECDrawerLayout_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ECDrawerLayout_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E68D984BE753CF05755AEF62B487E079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50CAA587CE1A41447B6CB3B74709A2AF /* ECDrawerLayout-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ECDrawerLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		EA6A0688AD63637EDE8F740E941F4AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA948569045265EE8B32820B9D1C9B12 /* ECExtension-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.6;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.6;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ECExtension/ECExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ECExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ECExtension/ECExtension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ECExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB576DC928B271F1ECC84D2C4D699AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50CAA587CE1A41447B6CB3B74709A2AF /* ECDrawerLayout-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ECDrawerLayout/ECDrawerLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ECDrawerLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ECDrawerLayout/ECDrawerLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ECDrawerLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EDA7764DB62ADE0EB2961B8F1CC8281B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B83FC5FEBA565315A6510D0775F7DEC /* Pods-ECDrawerLayout_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ECDrawerLayout_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-ECDrawerLayout_Tests/Pods-ECDrawerLayout_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ECDrawerLayout_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB9611A9A531493018E65CDAD3DE2CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA948569045265EE8B32820B9D1C9B12 /* ECExtension-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.6;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.6;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ECExtension/ECExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ECExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ECExtension/ECExtension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ECExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		261989684BF0E5D8E3791D9E68E8226B /* Build configuration list for PBXNativeTarget "ECDrawerLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AFD3A9CED3FAE28FC470BAA646BB8D6 /* Debug */,
+				EB576DC928B271F1ECC84D2C4D699AF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		364F5C4DF57F8AA5A620562B2298F187 /* Build configuration list for PBXNativeTarget "Pods-ECDrawerLayout_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA7764DB62ADE0EB2961B8F1CC8281B /* Debug */,
+				5F5DF73AFD4E09AA1301836F116DB9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58D28735DC71E7B78FDF37801B2EAA56 /* Build configuration list for PBXNativeTarget "ECDrawerLayout-ECDrawerLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D269C65BB0DEE3008844141E6DC3DB /* Debug */,
+				E68D984BE753CF05755AEF62B487E079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6119E83346C8629CA68F548D9487B549 /* Build configuration list for PBXNativeTarget "ECExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6A0688AD63637EDE8F740E941F4AFD /* Debug */,
+				FB9611A9A531493018E65CDAD3DE2CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABD9A9547204D56ACAE199035BE4C105 /* Build configuration list for PBXNativeTarget "ECExtension-ECExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				108A8C711543023A703E34244123229D /* Debug */,
+				57F9565FC63152F96E5FE52F347C087A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8DC1F6D362CD01DF165E08946512006 /* Build configuration list for PBXNativeTarget "Pods-ECDrawerLayout_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43DD3CD906149C6DCA07B9203B0336F7 /* Debug */,
+				10A6383A5A546A77B4E4E76AE4A09A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

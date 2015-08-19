@@ -1,0 +1,17 @@
+PODS:
+  - ECDrawerLayout (0.1.0)
+  - ECExtension (0.1.6)
+
+DEPENDENCIES:
+  - ECDrawerLayout (from `../`)
+  - ECExtension
+
+EXTERNAL SOURCES:
+  ECDrawerLayout:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ECDrawerLayout: f4483b07b3de5c520b6261701296abcaaeab2949
+  ECExtension: 80d13eb68b7722859ad1fc397e3fcba57aca1cee
+
+COCOAPODS: 0.38.2
