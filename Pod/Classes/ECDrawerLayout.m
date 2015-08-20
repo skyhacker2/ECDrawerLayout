@@ -61,7 +61,7 @@
         
         self.enableShadow = NO;
         self.enableTapClose = NO;
-        self.panGestureSideOffset = 10;
+        self.panGestureSideOffset = 30;
         self.width = 220;
         self.enableSwipeGesture = YES;
         self.openAnimationOptions = UIViewAnimationCurveEaseOut;
