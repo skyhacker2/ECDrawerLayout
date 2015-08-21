@@ -92,7 +92,7 @@
 - (void) setWidth:(CGFloat)width
 {
     _width = width;
-    CGRect frame = self.containerView.frame;
+    CGRect frame = [UIScreen mainScreen].bounds;
     frame.size.width = width;
     frame.origin.x = -width;
     self.containerView.frame = frame;
@@ -164,9 +164,34 @@
 - (void) setContentView:(UIView *)contentView
 {
     [self.containerView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    contentView.frame = CGRectMake(0, 0, self.containerView.bounds.size.width, self.containerView.bounds.size.height);
+    //contentView.frame = CGRectMake(0, 0, self.containerView.bounds.size.width, self.containerView.bounds.size.height);
     [self.containerView addSubview:contentView];
     _contentView = contentView;
+    _contentView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.containerView addConstraint:[NSLayoutConstraint constraintWithItem:_contentView
+                                                                  attribute:NSLayoutAttributeTop
+                                                                  relatedBy:NSLayoutRelationEqual
+                                                                     toItem:self.containerView
+                                                                  attribute:NSLayoutAttributeTop
+                                                                  multiplier:1.0 constant:0]];
+    [self.containerView addConstraint:[NSLayoutConstraint constraintWithItem:_contentView
+                                                                   attribute:NSLayoutAttributeBottom
+                                                                   relatedBy:NSLayoutRelationEqual
+                                                                      toItem:self.containerView
+                                                                   attribute:NSLayoutAttributeBottom
+                                                                  multiplier:1.0 constant:0]];
+    [self.containerView addConstraint:[NSLayoutConstraint constraintWithItem:_contentView
+                                                                   attribute:NSLayoutAttributeLeft
+                                                                   relatedBy:NSLayoutRelationEqual
+                                                                      toItem:self.containerView
+                                                                   attribute:NSLayoutAttributeLeft
+                                                                  multiplier:1.0 constant:0]];
+    [self.containerView addConstraint:[NSLayoutConstraint constraintWithItem:_contentView
+                                                                   attribute:NSLayoutAttributeRight
+                                                                   relatedBy:NSLayoutRelationEqual
+                                                                      toItem:self.containerView
+                                                                   attribute:NSLayoutAttributeRight
+                                                                  multiplier:1.0 constant:0]];
 }
 
 #pragma mark - public method
@@ -230,8 +255,8 @@
     CGRect frame = [UIScreen mainScreen].bounds;
     self.frame = frame;
     self.backgroundView.frame = frame;
-    self.containerView.frame = CGRectMake(-self.width, 0, self.width, frame.size.height);
-    self.contentView.frame = CGRectMake(0, 0, self.containerView.bounds.size.width, self.containerView.bounds.size.height);
+    //self.containerView.frame = CGRectMake(-self.width, 0, self.width, frame.size.height);
+    //self.contentView.frame = CGRectMake(0, 0, self.containerView.bounds.size.width, self.containerView.bounds.size.height);
 }
 
 - (void) finishHide

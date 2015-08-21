@@ -8,7 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DrawerView">
-            <rect key="frame" x="0.0" y="0.0" width="242" height="490"/>
+            <rect key="frame" x="0.0" y="0.0" width="242" height="508"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDA-wp-RtK">
@@ -50,6 +50,7 @@
                         <mask key="constraints">
                             <exclude reference="1pf-xe-0a0"/>
                             <exclude reference="fCF-RV-hlN"/>
+                            <exclude reference="p75-zD-k4q"/>
                         </mask>
                     </variation>
                 </tableView>
@@ -65,6 +66,7 @@
                 <constraint firstItem="Sz0-pC-CoW" firstAttribute="top" secondItem="wDA-wp-RtK" secondAttribute="bottom" id="aqs-PU-4PQ"/>
                 <constraint firstItem="Sz0-pC-CoW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="122" id="bDd-lH-6fN"/>
                 <constraint firstAttribute="trailing" secondItem="Sz0-pC-CoW" secondAttribute="trailing" id="e0l-jM-Q2X"/>
+                <constraint firstAttribute="bottom" secondItem="Sz0-pC-CoW" secondAttribute="bottom" constant="46" id="gqO-Lu-o31"/>
                 <constraint firstAttribute="bottom" secondItem="Sz0-pC-CoW" secondAttribute="bottom" constant="66" id="me8-Uc-n0i"/>
                 <constraint firstItem="Sz0-pC-CoW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vDn-vT-juE"/>
                 <constraint firstAttribute="trailing" secondItem="wDA-wp-RtK" secondAttribute="trailing" id="y42-td-ap2"/>
@@ -85,7 +87,7 @@
                 <outlet property="nameLabel" destination="YyU-lh-tlO" id="Fdc-Xz-XH3"/>
                 <outlet property="tableView" destination="Sz0-pC-CoW" id="R0I-eP-gnS"/>
             </connections>
-            <point key="canvasLocation" x="386" y="442"/>
+            <point key="canvasLocation" x="422" y="434"/>
         </view>
     </objects>
     <resources>
