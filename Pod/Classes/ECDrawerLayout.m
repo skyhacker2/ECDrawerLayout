@@ -66,10 +66,27 @@
         self.enableSwipeGesture = YES;
         self.openAnimationOptions = UIViewAnimationCurveEaseOut;
         self.closeAnimationOptions = UIViewAnimationCurveEaseIn;
+        self.openFromRight = NO;
     }
     return self;
 }
 
+
+/** Set the container view init position
+ *  openFromRight is YES, origin.x is the screen width.
+**/
+- (void) updateInitContainerPosition
+{
+    CGRect frame = [UIScreen mainScreen].bounds;
+    frame.size.width = self.width;
+    // Open direction init
+    if (!self.openFromRight) {
+        frame.origin.x = -self.width;
+    } else {
+        frame.origin.x = [UIScreen mainScreen].bounds.size.width;
+    }
+    self.containerView.frame = frame;
+}
 
 #pragma mark - getter/setter
 
@@ -92,10 +109,18 @@
 - (void) setWidth:(CGFloat)width
 {
     _width = width;
-    CGRect frame = [UIScreen mainScreen].bounds;
-    frame.size.width = width;
-    frame.origin.x = -width;
-    self.containerView.frame = frame;
+    [self setNeedsLayout];
+//    CGRect frame = [UIScreen mainScreen].bounds;
+//    frame.size.width = width;
+//    frame.origin.x = -width;
+//    self.containerView.frame = frame;
+    [self updateInitContainerPosition];
+}
+
+- (void) setOpenFromRight:(BOOL)openFromRight
+{
+    _openFromRight = openFromRight;
+    [self updateInitContainerPosition];
 }
 
 - (void) setEnableShadow:(BOOL)enableShadow
@@ -225,7 +250,12 @@
                         options:self.openAnimationOptions
                      animations:^{
                          CGRect frame = self.containerView.frame;
-                         frame.origin.x = 0;
+                         if (!self.openFromRight) {
+                             frame.origin.x = 0;
+                         } else {
+                             frame.origin.x = [UIScreen mainScreen].bounds.size.width - self.width;
+                         }
+                         
                          self.containerView.frame = frame;
                          self.backgroundView.alpha = BACKGROUND_ALPHA;
                          self.enableShadow = YES;
@@ -241,7 +271,12 @@
                         options:self.closeAnimationOptions
                      animations:^{
                          CGRect frame = self.containerView.frame;
-                         frame.origin.x = -self.width;
+                         if (!self.openFromRight) {
+                             frame.origin.x = -self.width;
+                         } else {
+                             frame.origin.x = [UIScreen mainScreen].bounds.size.width;
+                         }
+                         
                          self.containerView.frame = frame;
                          self.backgroundView.alpha = 0;
                          self.enableShadow = NO;

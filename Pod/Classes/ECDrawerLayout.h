@@ -41,6 +41,8 @@
 @property (nonatomic, assign) CGFloat width;
 @property (nonatomic, assign) BOOL enableSwipeGesture;
 @property (nonatomic, readonly) BOOL opened;
+/// Is open from right slide
+@property (nonatomic, assign) BOOL openFromRight;
 /** 
  *  Set the drawerlayout's parent view
  *  DrawerLayout will add swipe gesture in parent view

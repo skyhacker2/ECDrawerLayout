@@ -60,8 +60,11 @@
     self.drawerLayout.delegate = self;
     [self.navigationController.view addSubview:self.drawerLayout];
     
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(onLeftItemTouched:)];
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"left" style:UIBarButtonItemStylePlain target:self action:@selector(onLeftItemTouched:)];
     self.navigationItem.leftBarButtonItem = leftItem;
+    
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"Right" style:UIBarButtonItemStylePlain target:self action:@selector(onRightItemTouched:)];
+    self.navigationItem.rightBarButtonItem = rightItem;
     
 }
 
@@ -73,6 +76,13 @@
 
 - (void) onLeftItemTouched: (UIBarButtonItem*) sender
 {
+    self.drawerLayout.openFromRight = NO;
+    [self.drawerLayout openDrawer];
+}
+
+- (void) onRightItemTouched:(UIBarButtonItem*) sender
+{
+    self.drawerLayout.openFromRight = YES;
     [self.drawerLayout openDrawer];
 }
 
