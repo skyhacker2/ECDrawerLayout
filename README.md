@@ -35,7 +35,7 @@ You have to implement a content view yourself, and then add it to drawerLayout's
 
 I look forward to the effect that when DrawerLayout display, status bar hidden, like Uber did. :(
 
-![image](ECDrawerLayout2.gif)
+![image](ECDrawerLayout.gif)
 
 ## Author
 
