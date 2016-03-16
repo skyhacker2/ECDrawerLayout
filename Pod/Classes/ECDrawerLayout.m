@@ -338,8 +338,15 @@
         lastLocation = newLocation;
         newLocation += movement;
         
-        if (newLocation >= [self minXForDragging] && newLocation <= [self maxXForDragging]) {
-            [self moveToLocation:newLocation];
+        if (!self.openFromRight) {
+            if (newLocation >= [self minXForDragging] && newLocation <= [self maxXForDragging]) {
+                [self moveToLocation:newLocation];
+            }
+        } else {
+            CGFloat parentWith = self.parent.frame.size.width;
+            if (parentWith-newLocation <= self.width) {
+                [self moveToLocation:newLocation];
+            }
         }
         self.draggingPoint = translation;
     } else if (sender.state == UIGestureRecognizerStateEnded) {
@@ -350,10 +357,18 @@
         if (positiveVelocity >= FAST_VELOCITY_FOR_SWIPE_FOLLOW_DIRECTION) {
             if (velocity.x < 0) {
                 duration = (self.width - currentXOffset) / positiveVelocity;
-                [self closeWithDuration:duration];
+                if (self.openFromRight) {
+                    [self openWithDuration:duration];
+                } else {
+                    [self closeWithDuration:duration];
+                }
             } else {
                 duration = currentXOffset / positiveVelocity;
-                [self openWithDuration:duration];
+                if (self.openFromRight) {
+                    [self closeWithDuration:duration];
+                } else {
+                    [self openWithDuration:duration];
+                }
             }
         } else {
             if (currentXOffset < self.width/2) {
@@ -388,8 +403,11 @@
     CGRect frame = self.containerView.frame;
     frame.origin.x = location;
     self.containerView.frame = frame;
-    
+
     float ratio = ((location+self.width) / self.width);
+    if (self.openFromRight) {
+        ratio = (self.parent.frame.size.width-location) / self.width;
+    }
     float alpha = BACKGROUND_ALPHA * ratio;
     self.backgroundView.alpha = alpha;
     
@@ -409,7 +427,9 @@
             return YES;
         }
     } else {
-        if (point.x < self.panGestureSideOffset) {
+        if (!self.openFromRight && point.x < self.panGestureSideOffset) {
+            return YES;
+        } else if (self.openFromRight && point.x > self.parent.frame.size.width - self.panGestureSideOffset) {
             return YES;
         }
     }

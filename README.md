@@ -27,13 +27,20 @@ pod "ECDrawerLayout"
 
 ```
 self.drawerLayout = [[ECDrawerLayout alloc] initWithParentView:self.navigationController.view];
-    self.drawerLayout.contentView = self.drawerView;
-    self.drawerLayout.delegate = self;
-    [self.navigationController.view addSubview:self.drawerLayout];
+self.drawerLayout.contentView = self.drawerView;
+self.drawerLayout.delegate = self;
+[self.navigationController.view addSubview:self.drawerLayout];
 ```
 You have to implement a content view yourself, and then add it to drawerLayout's contentView property. Please see the example.
 
+if you want to open from right, set the openFormRight = YES
+
+```
+self.drawerLayout.openFromRight = YES;
+```
+
 I look forward to the effect that when DrawerLayout display, status bar hidden, like Uber did. :(
+
 
 ![image](ECDrawerLayout.gif)
 
